@@ -70,6 +70,14 @@ def is_divisible_by_three(num):
 
     >>> num_spaces("Balloonicorn is       awesome!")
     8
+"""
+def num_spaces(string):
+    counter = 0
+    for char in string:
+        if char == " ":
+            counter += 1
+    return counter
+"""
 
     >>> total_meal_price(30)
     34.5
