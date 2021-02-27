@@ -84,6 +84,11 @@ def num_spaces(string):
 
     >>> total_meal_price(30, .3)
     39.0
+"""
+
+def total_meal_price(price, tip=float(0.15)):
+    return price + (price * tip)
+"""
 
     >>> sign_and_parity(3)
     ['Positive', 'Odd']
