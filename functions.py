@@ -57,6 +57,13 @@ def print_sign(num):
 
     >>> is_divisible_by_three(10)
     False
+"""
+def is_divisible_by_three(num):
+    if num % 3 == 0:
+        return True
+    else:
+        return False
+"""
 
     >>> num_spaces("Balloonicorn is awesome!")
     2
