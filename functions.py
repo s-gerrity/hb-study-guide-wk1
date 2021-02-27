@@ -5,34 +5,39 @@ Please read the the instructions first (separate file). Your solutions should
 go below this docstring.
 
 PART ONE:
+"""
 
+def hello_world():
+    """
     >>> hello_world()
     Hello World
-"""
-def hello_world():
+    """
     return print("Hello World")
-"""
+
+def say_hi(name):
+    """
     >>> say_hi("Balloonicorn")
     Hi Balloonicorn
-"""
-def say_hi(name):
-    return print(f"Hi {name}")
-"""
+    """
+ return print(f"Hi {name}")
 
+def print_product(num1, num2):
+    """
     >>> print_product(3, 5)
     15
-"""
-def print_product(num1, num2):
-    return print(num1 * num2)
-"""
+    """
+return print(num1 * num2)
 
+def repeat_string(string, num):  
+    """
     >>> repeat_string("Balloonicorn", 3)
     BalloonicornBalloonicornBalloonicorn
-"""
-def repeat_string(string, num):
+    """
     for i in range(num):
         print(string)
-"""
+
+def print_sign(num):
+    """
     >>> print_sign(3)
     Higher than 0
 
@@ -42,59 +47,64 @@ def repeat_string(string, num):
 
     >>> print_sign(-3)
     Lower than 0
-"""
-def print_sign(num):
+    """
+
     if num > 0:
         return print("Higher than 0")
     elif num < 0:
         return print("Lower than 0")
     else:
         return print("Zero")
-"""
 
+def is_divisible_by_three(num):
+    """
     >>> is_divisible_by_three(12)
     True
 
     >>> is_divisible_by_three(10)
     False
-"""
-def is_divisible_by_three(num):
+    """
+
     if num % 3 == 0:
         return True
     else:
         return False
-"""
 
+def num_spaces(string):
+    """
     >>> num_spaces("Balloonicorn is awesome!")
     2
 
     >>> num_spaces("Balloonicorn is       awesome!")
     8
-"""
-def num_spaces(string):
+    """
+
     counter = 0
     for char in string:
         if char == " ":
             counter += 1
     return counter
-"""
 
+def total_meal_price(price, tip=float(0.15)):
+    """
     >>> total_meal_price(30)
     34.5
 
     >>> total_meal_price(30, .3)
     39.0
-"""
+    """
 
-def total_meal_price(price, tip=float(0.15)):
     return price + (price * tip)
-"""
 
+def sign_parity():
+"""
     >>> sign_and_parity(3)
     ['Positive', 'Odd']
 
     >>> sign_and_parity(-2)
     ['Negative', 'Even']
+"""
+
 
 PART TWO:
 
