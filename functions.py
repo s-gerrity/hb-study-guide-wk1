@@ -19,14 +19,14 @@ def say_hi(name):
     >>> say_hi("Balloonicorn")
     Hi Balloonicorn
     """
- return print(f"Hi {name}")
+    return print(f"Hi {name}")
 
 def print_product(num1, num2):
     """
     >>> print_product(3, 5)
     15
     """
-return print(num1 * num2)
+    return print(num1 * num2)
 
 def repeat_string(string, num):  
     """
@@ -34,7 +34,7 @@ def repeat_string(string, num):
     BalloonicornBalloonicornBalloonicorn
     """
     for i in range(num):
-        print(string)
+        print(string, end='')
 
 def print_sign(num):
     """
@@ -96,16 +96,16 @@ def total_meal_price(price, tip=float(0.15)):
 
     return price + (price * tip)
 
-def sign_parity():
-"""
+#def sign_parity():
+    """
     >>> sign_and_parity(3)
     ['Positive', 'Odd']
 
     >>> sign_and_parity(-2)
     ['Negative', 'Even']
-"""
+    """
 
-
+    """
 PART TWO:
 
     >>> full_title("Balloonicorn")
