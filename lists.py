@@ -16,12 +16,15 @@ def print_list(items):
         3
         9
     """
-    for i in range(len(items)):
-        return print(i)
+    # for i in range(len(items)):
+    #     return print(items)
+
+    for i in items:
+        print(i)
 
 
 def long_words(words):
-    """Return words in input list that longer than 4 characters.
+    """Return words in input list that are longer than 4 characters.
     
     For example::
     
@@ -36,8 +39,13 @@ def long_words(words):
         >>> long_words(["all", "are", "tiny"])
         []
     """
+    new_list = []
+    for word in words:
+        if len(word) > 4:
+            new_list.append(word)
+    return new_list
 
-    return ['the wrong thing']
+    
 
 
 def n_long_words(words, n):
